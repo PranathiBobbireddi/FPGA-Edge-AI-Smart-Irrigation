@@ -53,11 +53,11 @@ The model was validated using a Python-generated dataset before RTL implementati
 ---
 ## Hardware Architecture:
 Moisture Sensor (ADC)
-↓
+       ↓
 Moisture Classifier (Verilog RTL)
-↓
+       ↓
 Irrigation Controller
-↓
+       ↓
 Pump Control Output
 
 ---
