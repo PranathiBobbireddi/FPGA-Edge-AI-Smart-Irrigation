@@ -76,7 +76,7 @@ docs/ → Simulation screenshots
 ## Simulation
 
 Behavioral simulation was performed using Xilinx Vivado.
-
+![Image](https://github.com/user-attachments/assets/c106f840-716d-4e71-a20c-a41f42d48213)
 Example test cases:
 
 | Moisture | Class   | Pump |
