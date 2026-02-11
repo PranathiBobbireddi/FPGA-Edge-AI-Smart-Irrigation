@@ -1,0 +1,19 @@
+# Vivado
+*.jou
+*.log
+*.str
+*.cache
+*.runs
+*.sim
+*.hw
+*.ip_user_files
+*.Xil
+*.gen
+*.srcs
+*.xpr
+*.bit
+*.ltx
+
+# OS
+.DS_Store
+Thumbs.db
