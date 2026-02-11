@@ -115,9 +115,6 @@ Example test cases:
 
 ---
 
-## Author
-
-Developed as part of FPGA Edge AI Hackathon project.
 
 
 
