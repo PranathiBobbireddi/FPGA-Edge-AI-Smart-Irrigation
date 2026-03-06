@@ -3,8 +3,12 @@ Hardware Accelerated Edge AI Smart Irrigation System implemented in Verilog RTL 
 FPGA-Edge-AI-Smart-Irrigation
 │
 ├── src/
-│   ├── moisture_classifier.v
-│   ├── irrigation_controller.v
+│   └── adc_interface.v
+│   └── sensor_filter.v
+│   └── edge_ai_classifier.v
+│   └── irrigation_fsm.v
+│   └── pump_timer.v
+│   └── uart_tx.v
 │   └── top_module.v
 │
 ├── sim/
@@ -51,15 +55,27 @@ A threshold-based classifier is used:
 
 The model was validated using a Python-generated dataset before RTL implementation.
 ---
-## Hardware Architecture:
-Moisture Sensor (ADC)
-       ↓
-Moisture Classifier (Verilog RTL)
-       ↓
-Irrigation Controller
-       ↓
-Pump Control Output
-
+## Hardware FPGA Architecture:
+Moisture Sensor
+       │
+       ▼
+   ADC Interface
+       │
+       ▼
+ Sensor Filter
+ (Moving Average)
+       │
+       ▼
+ Edge AI Classifier
+       │
+       ▼
+ Irrigation FSM Controller
+       │
+       ▼
+ Pump Driver + Timer
+       │
+       ▼
+ UART Monitoring
 ---
 
 ## Project Structure
